@@ -26,9 +26,9 @@ figure {
   --marker-image: url(../images/marker-light.svg);
   margin: 0;
   color: var(--text-color);
-  font-size: 18px;
 
   font-family: var(--main-font);
+  font-size: 18px;
   background-color: var(--bg-color);
   min-inline-size: 360px;
 }
@@ -72,10 +72,10 @@ figure {
 .header__theme-button {
   border: none;
   color: inherit;
+  font-family: var(--main-font);
+  font-size: 18px;
   background-color: inherit;
   cursor: pointer;
-  font-size: 18px;
-  font-family: var(--main-font);
 }
 
 .header__theme-button:focus {
