@@ -17,8 +17,6 @@ figure {
 }
 
 .page {
-  min-inline-size: 360px;
-  margin: 0;
 
   --bg-color: #F3EFEC;
   --text-color: #312A4E;
@@ -26,10 +24,12 @@ figure {
   --accent-bg: #FFAB6B;
   --main-font: 'Raleway', serif;
   --accent-font: 'STIX Two Text', serif;
-  --marker-image: url("../images/marker-light.svg");
+  --marker-image: url(../images/marker-light.svg);
+  margin: 0;
+  color: var(--text-color);
 
   background-color: var(--bg-color);
-  color: var(--text-color);
+  min-inline-size: 360px;
 }
 
 .theme_dark {
@@ -37,19 +37,19 @@ figure {
   --text-color: #B3B3B3;
   --accent-color: #B3B3B3;
   --accent-bg: transparent;
-  --marker-image: url("../images/marker-dark.svg");
+  --marker-image: url(../images/marker-dark.svg);
 }
 
 .heading {
   font-size: var(--accent-font);
-  text-align: center;
   line-height: 90%;
+  text-align: center;
 }
 
 .header__title {
-  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
   padding-top: 10vw;
   padding-bottom: 40px;
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
 }
 
 .header__menu {
@@ -70,9 +70,9 @@ figure {
 
 .header__theme-button {
   border: none;
-  cursor: pointer;
   color: inherit;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .header__theme-button:focus {
@@ -89,14 +89,14 @@ figure {
 }
 
 .header__theme-button_is-active::after {
-  position: absolute;
   content: '';
-  background: url("../images/pattern.svg");
-  background-color: var(--accent-bg);
-  z-index: -1;
-  block-size: 0.4em;
-  margin-top: 0.7em;
+  position: absolute;
   inset: 0;
+  z-index: -1;
+  margin-top: 0.7em;
+  background: url(../images/pattern.svg);
+  background-color: var(--accent-bg);
+  block-size: 0.4em;
 }
 
 .content-section {
@@ -105,17 +105,17 @@ figure {
 }
 
 .content__title {
-  font-size: 30px;
   padding-top: 7vw;
   padding-bottom: 2.5vw;
+  font-size: 30px;
 }
 
 .content__text-block_type_first-lettered::first-letter {
+  display: inline-block;
+  margin: 0 1px 4px 4px;
   border: 1px solid var(--accent-color);
   padding: 0 2px;
   background-color: var(--accent-bg);
-  margin: 0 1px 4px 4px;
-  display: inline-block;
 }
 
 .content__paragraph {
@@ -124,9 +124,9 @@ figure {
 
 .content__figure {
   position: relative;
+  width: calc(100% + 10vi);
   margin: 7vw 0;
   margin-left: -5vi;
-  width: calc(100% + 10vi);
 }
 
 .content__picture {
@@ -134,9 +134,9 @@ figure {
 }
 
 .content__picture-caption {
-  text-align: center;
-  padding: 20px 0;
   border-bottom: 1px solid var(--text-color);
+  padding: 20px 0;
+  text-align: center;
 }
 
 .content__blockquote {
@@ -159,19 +159,19 @@ figure {
 
 .content__list {
   display: flex;
-  flex-direction: column;
-  inline-start: 40px;
-  list-style: none; 
+  flex-direction: column; 
   gap: 10px;
+  list-style: none;
+  inline-start: 40px;
 }
 
 .content__card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border: 1px solid var(--text-color);
   margin-top: 7vw;
+  border: 1px solid var(--text-color);
   block-size: calc(3/4 * 100vw);
 }
 
@@ -188,14 +188,14 @@ figure {
 }
 
 .colored-text::after {
-  position: absolute;
   content: '';
-  background: url("../images/pattern.svg");
-  background-color: var(--accent-bg);
-  z-index: -1;
-  block-size: 0.2em;
-  margin-top: 0.7em;
+  position: absolute;
   inset: 0;
+  z-index: -1;
+  margin-top: 0.7em;
+  background: url(../images/pattern.svg);
+  background-color: var(--accent-bg);
+  block-size: 0.2em;
 }
 
 .content__list li {
@@ -203,15 +203,15 @@ figure {
 }
 
 .content__list li::before {
+	content: "";
   position: absolute;
   inset: 0;
   margin-left: -25px;
-	content: "";
+  background-image: var(--marker-image);
+  background-repeat: no-repeat;
+  background-size: contain;
   block-size: 15px;
   inline-size: 15px;
-  background-image: var(--marker-image);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .footer {
