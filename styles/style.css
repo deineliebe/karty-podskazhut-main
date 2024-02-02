@@ -117,11 +117,10 @@ figure {
   display: inline-block;
   margin: 0 1px 4px 4px;
   border: 1px solid var(--accent-color);
-  padding: 0 2px;
+  padding: 0 5px;
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
-  letter-spacing: 0.3em;
   background-color: var(--accent-bg);
 }
 
