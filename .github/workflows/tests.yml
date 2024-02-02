@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 name: Tests
 
 on:
@@ -35,4 +33,3 @@ jobs:
     - name: Show test results
       run: bash tests-selfmade-project-5-public/result.sh
 
->>>>>>> c72f935c41030d15ed092a811a7d26ebd06cfec2
