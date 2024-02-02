@@ -26,7 +26,9 @@ figure {
   --marker-image: url(../images/marker-light.svg);
   margin: 0;
   color: var(--text-color);
+  font-size: 18px;
 
+  font-family: var(--main-font);
   background-color: var(--bg-color);
   min-inline-size: 360px;
 }
@@ -40,7 +42,7 @@ figure {
 }
 
 .heading {
-  font-size: var(--accent-font);
+  font-family: var(--accent-font);
   line-height: 90%;
   text-align: center;
 }
@@ -72,6 +74,8 @@ figure {
   color: inherit;
   background-color: inherit;
   cursor: pointer;
+  font-size: 18px;
+  font-family: var(--main-font);
 }
 
 .header__theme-button:focus {
@@ -114,6 +118,10 @@ figure {
   margin: 0 1px 4px 4px;
   border: 1px solid var(--accent-color);
   padding: 0 2px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.3em;
   background-color: var(--accent-bg);
 }
 
