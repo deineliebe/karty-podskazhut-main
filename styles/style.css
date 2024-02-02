@@ -124,7 +124,7 @@ figure {
 .content__figure {
   position: relative;
   width: calc(100% + 10vi);
-  margin: 0 0 7vw -5vi;
+  margin: 7vw 0 7vw -5vi;
 }
 
 .content__picture {
