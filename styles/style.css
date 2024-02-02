@@ -85,6 +85,7 @@ figure {
 
 .header__theme-button_is-active {
   position: relative;
+  font-weight: 700;
 }
 
 .header__theme-button:not(.header__theme-button_is-active):hover {
@@ -108,8 +109,8 @@ figure {
 }
 
 .content__title {
-  padding-top: 7vw;
-  padding-bottom: 2.5vw;
+  margin-top: 7vw;
+  margin-bottom: 2.5vw;
   font-size: 30px;
 }
 
